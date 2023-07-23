@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style/index.css">
+	<script src="./script/index.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		<div class="container">
+			<ul
+				class="document-group-list"
+				data-bind="
+					sortable: {
+						data: documentGroups,
+						connectClass: 'document-group-list',
+						options: {
+							handle: '.document-group__handle',
+							revert: DROP_DURATION,
+						},
+						afterMove: afterMove,
+						beforeMove: beforeMove,
+					}
+				"
+			>
+				<li class="document-group-list__item document-group">
+					<div class="document-group__container">
+						<button
+							class="document-group__collapse icon icon--arrow--blue"
+							type="button"
+						>
+						</button>
+						<div
+							class="document-group__name"
+							data-bind="text: $data.name"
+						>
+						</div>
+						<div class="document-group__handle icon icon--dobule-arrow--gray"></div>
+					</div>
+					<ul
+						class="document-group__list document-list"
+						data-bind="
+							sortable: {
+								data: $data.documentList.items,
+								connectClass: 'document-list',
+								options: {
+									handle: '.document__handle',
+									revert: $root.DROP_DURATION,
+								},
+								afterMove: $root.afterMove,
+							}
+						"
+					>
+						<div class="document-list__item document">
+							<div class="document__container">
+								<div
+									class="document__name"
+									data-bind="text: $data.name"
+								>
+								</div>
+								<div class="document__handle icon icon--dobule-arrow--gray"></div>
+							</div>
+						</div>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

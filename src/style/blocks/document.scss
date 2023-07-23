@@ -1,0 +1,16 @@
+@use '../mixins/card.scss';
+
+.document {
+
+	&__container {
+		@include card.default;
+
+		display: flex;
+		gap: 15px;
+		align-items: center;
+	}
+
+	&__handle {
+		margin-left: auto;
+	}
+}

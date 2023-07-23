@@ -1,0 +1,21 @@
+:root {
+	--c-black: #000000;
+	--c-gray: #BFC9E0;
+	--c-dark-gray: #8E9CBB;
+	--c-light-gray: #DFE4EF;
+	--c-white: #FFFFFF;
+	--c-cyan: #00C2FF;
+	--c-blue: #0066FF;
+	--c-pink: #FF238D;
+	--c-orange: #FF8D23;
+	--c-merigold: #FFB800;
+
+	--border-width: 1px;
+	--border-style: solid;
+	--border-color: var(--c-light-gray);
+	--border: var(--border-width) var(--border-style) var(--border-color);
+
+	--base-font-family: 'Fira Sans', sans-serif;
+
+	font-family: var(--base-font-family);
+}

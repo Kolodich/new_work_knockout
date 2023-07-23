@@ -1,0 +1,6 @@
+@mixin default {
+	padding: 13px 16px;
+	border: var(--border);
+	color: var(--c-black);
+	background-color: var(--c-white);
+}

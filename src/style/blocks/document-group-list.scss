@@ -1,0 +1,9 @@
+.document-group-list {
+	list-style: none;
+
+	&__item {
+		&:not(:first-child) {
+			margin-top: calc(var(--border-width) * -1);
+		}
+	}
+}

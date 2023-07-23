@@ -1,0 +1,18 @@
+.icon {
+	--icon-size: 16px;
+	display: inline-block;
+	height: var(--icon-size);
+	width: var(--icon-size);
+	background-position: center;
+	background-size: var(--icon-size);
+	background-repeat: no-repeat;
+
+	&--arrow--blue {
+
+		background-image: url(../images/icons/arrow--blue.svg);
+	}
+
+	&--dobule-arrow--gray {
+		background-image: url(../images/icons/dobule-arrow--gray.svg);
+	}
+}
